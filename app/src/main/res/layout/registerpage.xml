@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/txtSorry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sorry!"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nothing Found in your request"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtSorry"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Register"
+        android:backgroundTint="@color/statusBar"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btnRegister"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:backgroundTint="@color/statusBar"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:text="Cancel"
+        android:backgroundTint="@color/statusBar"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

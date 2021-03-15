@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+
+    <TextView
+        android:id="@+id/txtBlood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/bloodType"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <lib.kingja.switchbutton.SwitchMultiButton
+        android:id="@id/radiogroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtBlood"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="30.0dip"
+        android:layout_marginRight="16.0dip"
+        android:padding="8.0dip"
+        app:selectedColor="@color/statusBar"
+        app:selectedTab="0"
+        app:strokeRadius="8.0dip"
+        app:strokeWidth="1.0dip"
+        app:switchTabs="@array/switch_tabs"
+        app:textSize="20.0sp" />
+
+    <TextView
+        android:id="@+id/txtDistence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radiogroup1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/distance"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ru.bullyboo.view.CircleSeekBar
+        android:id="@id/seekBar"
+        app:backgroundCircleLineWidth="10.0dip"
+        app:dotColor="@color/statusBar"
+        app:dotRadius="12.0dip"
+        app:isClockwise="true"
+        android:layout_below="@+id/txtDistence"
+        app:maxValue="50"
+        app:progressCircleLineColor="@color/statusBar"
+        app:progressCircleLineWidth="10.0dip"
+        app:showCounter="true"
+        app:value="10"
+        android:layout_width="300.0dip"
+        android:layout_height="300.0dip"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@id/txtDistence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="50.0dip"
+            android:text="@string/txtDistance" />
+    </ru.bullyboo.view.CircleSeekBar>
+
+
+    <Button
+        android:id="@+id/btnFind"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="@string/btnFindDonner"
+        android:backgroundTint="@color/statusBar"
+        android:background="@drawable/backgraoundcircle"
+        android:textStyle="bold" />
+</RelativeLayout>
